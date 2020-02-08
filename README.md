@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Development process
 
-I chose to build this project in ReactJS because of the ease of use. The app is kept simple to ensure I could meet the time limit. The posters are displayed in squares and when a poster is clicked on the movie trailer opens in a modal. To remove the modal click anywhere on the screen again.
+I chose to build this project in ReactJS because of the ease of use. The app is kept simple. The posters are displayed in squares and when a poster is clicked on the movie trailer opens in a modal. To remove the modal click anywhere on the screen again.
