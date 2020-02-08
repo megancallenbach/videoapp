@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
+  margin: 0;
+  color: white;
+  font-family: 'Lato', sans-serif;
   background-color: #282c34;
-  min-height: 100vh;
+}
+
+.trailerTitle {
+  font-size: 24px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  text-shadow: 2px 2px black;
+  width: 100%;
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video:focus {
+  outline: none;
+}
+
+.ReactModal__Content:focus {
+  outline: none;
+}
+
+.ReactModal__Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoTrailer {
+  background-color: rgba(40, 44, 52, 0.9);
+  overflow: hidden;
+  width: 75vw;
+  height: 90%;
+  border-radius: 10px;
+  margin: 70px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.posterContainer {
+  max-width: 330px;
+  width: 330px;
+  padding: 5px;
+  position: relative;
+  align-items: 'center';
+  justify-content: 'center';
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.videoContainer {
+  width: 60vw;
+  padding: 50px;
+  position: relative;
+  align-items: 'center';
+  justify-content: 'center';
+  display: flex;
+}
+
+.trailerContainer {
+  flex-direction: row;
+  display: flex;
+}
+
+.poster {
+  object-fit: cover;
+  height: 338px;
+}
+
+.transparentButton {
+  background-color: transparent;
+  padding: 0;
+  border: 0px solid transparent;
+}
+.transparentButton:focus {
+  outline: none;
+}
+
+@media (max-width: 750px) {
+
+  .videoContainer {
+    width: 90vw;
+    padding: 50px 0px 100px 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .videoTrailer {
+    width: 98vw;
+    margin: 20px;
   }
 }
+

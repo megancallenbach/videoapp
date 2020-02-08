@@ -1,0 +1,1 @@
+export const API_URL = 'https://cdn.jwplayer.com/v2/playlists/iG6xB42W';
